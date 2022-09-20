@@ -1,0 +1,17 @@
+{
+    "1": {
+      "designation": "Front End Developer / w3schools.com",
+      "duration": "Jan 2015 - Current",
+      "text": "Nice Experience"
+    },
+    "2": {
+      "designation": "Web Developer / something.com",
+      "duration":"Mar 2012 - Dec 2014",
+      "text": "Nice Experience"
+    },
+    "3": {
+      "designation": "Graphic Designer / designsomething.com",
+      "duration": "Jun 2010 - Mar 2012",
+      "text": "Nice Experience"
+    }
+  }

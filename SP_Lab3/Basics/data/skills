@@ -1,0 +1,19 @@
+{
+    "1": {
+      "name": "Adobe Phptoshop",
+      "percentage": "90"
+      
+    },
+    "2": {
+      "name": "Photoshop",
+      "percentage": "80"
+    },
+    "3": {
+        "name": "Illustrator",
+        "percentage": "25"
+    },
+    "4": {
+        "name": "Media",
+        "percentage": "50"
+    }        
+  }
