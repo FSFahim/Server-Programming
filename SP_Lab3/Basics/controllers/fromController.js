@@ -1,7 +1,18 @@
+
 const fs = require("fs");
 
-const getCV = (req, res) => {
-  educations = fs.readFileSync("data/education", { encoding: "utf-8" });
+const getForm = (req,res)=>{
+    res.render("form");
+}
+
+const postForm = (req,res) =>{
+    console.log(req.body)
+    const name = req.body.name;
+    const designation = req.body.designation;
+    const address = req.body.address;
+    const email = req.body.email;
+    const phone = req.body.phone;
+    educations = fs.readFileSync("data/education", { encoding: "utf-8" });
   educations = JSON.parse(String(educations));
 
   edus = [];
@@ -33,7 +44,9 @@ const getCV = (req, res) => {
   for (let key in skills) {
     skill.push(skills[key]);
   }
-  res.render("cv", { name: "Farhan Shahriar Fahim", designation: "Project Manager", address: "IUT, Boardbazar", email: "farhanshahriar7@iut-dhaka.edu", phone: "01669047794", educations: edus, experience: exp, language: lang, skills: skill });
-};
-          
-module.exports = { getCV: getCV };
+  res.render("cv", { name: name, designation: designation, address: address, email: email, phone: phone, educations: edus, experience: exp, language: lang, skills: skill });
+
+}
+
+module.exports = { getForm: getForm,
+postForm: postForm };

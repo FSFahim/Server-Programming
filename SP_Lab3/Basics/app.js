@@ -2,7 +2,8 @@ const express = require("express"); //Includes the express library
 const app = express(); //Creates an Express Application
 const router = require("./router");
 const port = 3000;
-
+var bodyParser = require('body-parser')
+app.use(bodyParser.urlencoded({ extended: false }))
 /*** 
 app.get() takes a callback function as an argument that will be invoked
 whenever there is an HTTP GET request 
